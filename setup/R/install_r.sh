@@ -11,7 +11,7 @@ sudo apt-get -y update
 sudo apt-get -y install r-base r-cran-rjava libzmq3-dev libcurl4-openssl-dev libpq-dev gdebi-core
 
 sudo chmod o+w /usr/local/lib/R/site-library
-Rscript /vagrant/setup/R/install_r_packages.R
+Rscript /vagrant/setup/R/install_packages.R
 
 wget https://download2.rstudio.org/rstudio-server-0.99.902-amd64.deb
 echo "y" | sudo gdebi rstudio-server-0.99.902-amd64.deb

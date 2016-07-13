@@ -143,7 +143,7 @@ echo "export HIVE_HOME=\"/home/vagrant/apache-hive-1.2.1-bin\"" >> ~/.profile
 echo "export HADOOP_USER_CLASSPATH_FIRST=true" >> ~/.profile
 echo "export PATH=\"\$PATH:\$HIVE_HOME/bin\"" >> ~/.profile 
 cp /home/vagrant/apache-hive-1.2.1-bin/lib/jline-2.12.jar /home/vagrant/hadoop-2.6.0/share/hadoop/yarn/lib/
-source ~/.profile
+source ~/.
 
 
 wget http://files.grouplens.org/datasets/movielens/ml-1m.zip
@@ -153,20 +153,10 @@ rm ml-1m.zip
 
 hdfs dfs -put ~/ml-1m/* /data/movielens/
 
-sudo apt-get -y install r-cran-rjava libzmq3-dev libcurl4-openssl-dev
-
-echo "install.packages(c('repr', 'pbdZMQ', 'devtools','stringr'),repos='http://cran.us.r-project.org')" > ~/install_r_packages.R
-echo "install.packages(c('dplyr', 'ggplot2', 'Hmisc','jsonlite'),repos='http://cran.us.r-project.org')" >> ~/install_r_packages.R
-echo "install.packages(c('reshape2', 'Rcpp', 'RPostgreSQL'),repos='http://cran.us.r-project.org')" >> ~/install_r_packages.R
-echo "install.packages(c('rkafka', 'rkafkajars', 'tidyr','RCurl'),repos='http://cran.us.r-project.org')" >> ~/install_r_packages.R
-echo "library(\"devtools\")" >> ~/install_r_packages.R
-echo "install_github('IRkernel/repr')" >> ~/install_r_packages.R
-echo "install_github('IRkernel/IRdisplay')" >> ~/install_r_packages.R
-echo "install_github('IRkernel/IRkernel')" >> ~/install_r_packages.R
-echo "IRkernel::installspec(user=FALSE)" >> ~/install_r_packages.R
+sudo apt-get -y install r-cran-rjava libzmq3-dev libcurl4-openssl-dev libpq-dev
 sudo chmod o+w /usr/local/lib/R/site-library
 sudo chmod o+w /usr/local/share/jupyter/
-Rscript install_r_packages.R
+Rscript /vagrant/setup/R/install_r_packages.R
 
 sudo apt-get install gdebi-core
 wget https://download2.rstudio.org/rstudio-server-0.99.902-amd64.deb
@@ -174,7 +164,7 @@ sudo gdebi rstudio-server-0.99.902-amd64.deb
 rm rstudio-server-0.99.902-amd64.deb
 sudo rstudio-server stop
 
-pip install kafka-python
+pip install 
 ## Maven Install
 #wget http://www-us.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
 #sudo tar -zxf apache-maven-3.3.9-bin.tar.gz -C /usr/local/
