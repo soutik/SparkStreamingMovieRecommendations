@@ -1,0 +1,15 @@
+export SPARK_HOME="/home/vagrant/spark-1.6.2-bin-hadoop2.6"
+export ZEPPELIN_HOME="/home/vagrant/zeppelin-0.6.0-bin-all"
+export KAFKA_HOME="/home/vagrant/kafka_2.10-0.8.2.1"
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/jre/"
+export HADOOP_PREFIX="/home/vagrant/hadoop-2.6.0"
+export HADOOP_HOME=$HADOOP_PREFIX
+export HADOOP_COMMON_HOME=$HADOOP_PREFIX
+export HADOOP_CONF_DIR=$HADOOP_PREFIX/etc/hadoop
+export HADOOP_HDFS_HOME=$HADOOP_PREFIX
+export HADOOP_MAPRED_HOME=$HADOOP_PREFIX
+export HADOOP_YARN_HOME=$HADOOP_PREFIX
+export HIVE_HOME="/home/vagrant/apache-hive-1.2.1-bin"
+export HADOOP_USER_CLASSPATH_FIRST=true
+export PATH="$PATH:$HADOOP_PREFIX/bin"
+export PATH="$PATH:$HIVE_HOME/bin"
