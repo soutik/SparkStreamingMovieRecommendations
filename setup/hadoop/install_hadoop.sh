@@ -13,16 +13,7 @@ tar -xvzf hadoop-2.6.0.tar.gz
 rm hadoop-2.6.0.tar.gz
 
 
-echo "export JAVA_HOME=\"/usr/lib/jvm/java-7-openjdk-amd64/jre/\"" >> ~/.profile
 echo "export JAVA_HOME=\"/usr/lib/jvm/java-7-openjdk-amd64/jre/\"" >> /home/vagrant/hadoop-2.6.0/etc/hadoop/hadoop-env.sh
-echo "export HADOOP_PREFIX=\"/home/vagrant/hadoop-2.6.0\"" >> ~/.profile
-echo "export HADOOP_HOME=\$HADOOP_PREFIX" >> ~/.profile
-echo "export HADOOP_COMMON_HOME=\$HADOOP_PREFIX" >> ~/.profile
-echo "export HADOOP_CONF_DIR=\$HADOOP_PREFIX/etc/hadoop" >> ~/.profile
-echo "export HADOOP_HDFS_HOME=\$HADOOP_PREFIX" >> ~/.profile
-echo "export HADOOP_MAPRED_HOME=\$HADOOP_PREFIX" >> ~/.profile
-echo "export HADOOP_YARN_HOME=\$HADOOP_PREFIX" >> ~/.profile
-
 
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" > /home/vagrant/hadoop-2.6.0/etc/hadoop/core-site.xml
 echo "<?xml-stylesheet type=\"text/xsl\" href=\"configuration.xsl\"?>" >> /home/vagrant/hadoop-2.6.0/etc/hadoop/core-site.xml
