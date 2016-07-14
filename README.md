@@ -27,6 +27,9 @@ To get started:
 1. Install Virtual Box - https://www.virtualbox.org/wiki/Downloads 
 2. Install Vagrant - https://www.vagrantup.com/
 3. Install git - https://git-scm.com/download/
-4. Clone this git repository in your home directory from terminal - /code git clone https://github.com/bryantravissmith/SparkStreamingMovieRecommendations
-5. Get into the folder - /code cd SparkStreamingMovieRecommendations
-6. Type /code vagrant up 
+4. Clone this git repository in your home directory from terminal - `git clone https://github.com/bryantravissmith/SparkStreamingMovieRecommendations`
+5. Get into the folder - `cd SparkStreamingMovieRecommendations`
+6. Type `vagrant up`. This will take over 20-30 mins depending on your internet connection.
+7. SSH using `vagrant ssh`
+
+After this you should be in a VM with all the applications installed for you to play around with.
