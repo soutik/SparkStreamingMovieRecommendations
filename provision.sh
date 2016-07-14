@@ -1,6 +1,8 @@
 #!/bin/bash
 
-bash /vagrant/setup/load_environment.sh
+cat /vagrant/setup/load_environment.sh >> ~/.profile
+source ~/.profile
+
 bash /vagrant/setup/postgresql/install_postgresql.sh
 bash /vagrant/setup/scala/install_scala.sh
 bash /vagrant/setup/spark/install_spark.sh
