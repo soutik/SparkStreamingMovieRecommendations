@@ -9,7 +9,7 @@ bash /vagrant/setup/kafka/install_kafka.sh
 bash /vagrant/setup/python/install_python.sh
 bash /vagrant/setup/R/install_r.sh
 bash /vagrant/setup/hadoop/install_hadoop.sh
-bash /vagrant/setup/hadoop/install_hive.sh
+bash /vagrant/setup/hive/install_hive.sh
 bash /vagrant/setup/data/download_movielens.sh
 
 
