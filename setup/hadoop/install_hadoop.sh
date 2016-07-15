@@ -3,10 +3,11 @@
 
 #download and decompress kafka
 
-sudo apt-get -y install ssh rsync 
+sudo apt-get -y install ssh rsync openssh-client openssh-server
 
 ssh-keygen -t dsa -P '' -f ~/.ssh/id_dsa
 sudo cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys
+
 
 wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz
 tar -xvzf hadoop-2.6.0.tar.gz

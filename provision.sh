@@ -2,7 +2,10 @@
 
 cat /vagrant/setup/load_environment.sh >> ~/.profile
 source ~/.profile
+<<<<<<< HEAD
 
+=======
+>>>>>>> bryantravissmith/master
 bash /vagrant/setup/postgresql/install_postgresql.sh
 bash /vagrant/setup/scala/install_scala.sh
 bash /vagrant/setup/spark/install_spark.sh
@@ -13,5 +16,6 @@ bash /vagrant/setup/R/install_r.sh
 bash /vagrant/setup/hadoop/install_hadoop.sh
 bash /vagrant/setup/hive/install_hive.sh
 bash /vagrant/setup/data/download_movielens.sh
+
 
 
