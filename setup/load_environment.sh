@@ -13,3 +13,4 @@ export HIVE_HOME="/home/vagrant/apache-hive-1.2.1-bin"
 export HADOOP_USER_CLASSPATH_FIRST=true
 export PATH="$PATH:$HADOOP_PREFIX/bin"
 export PATH="$PATH:$HIVE_HOME/bin"
+export PYTHONPATH=$PYTHONPATH:$SPARK_HOME/python
